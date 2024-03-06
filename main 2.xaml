@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="main_2" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1111,2128" sap2010:WorkflowViewState.IdRef="main_2_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="main_2" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1111,2163" sap2010:WorkflowViewState.IdRef="main_2_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -127,7 +127,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="890,2183" sap2010:WorkflowViewState.IdRef="Sequence_11">
+  <Sequence sap:VirtualizedContainerService.HintSize="890,2098" sap2010:WorkflowViewState.IdRef="Sequence_11">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="MessagetoGPT" />
       <Variable x:TypeArguments="x:String" Name="ClientMessagetoGPT" />
@@ -139,43 +139,43 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: ChatGPT" sap:VirtualizedContainerService.HintSize="828,2072" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="3c171951-baf2-4144-96d9-a7a8f369da42" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: ChatGPT" sap:VirtualizedContainerService.HintSize="828,1987" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="3c171951-baf2-4144-96d9-a7a8f369da42" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="794,1855" sap2010:WorkflowViewState.IdRef="Sequence_12">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="794,1770" sap2010:WorkflowViewState.IdRef="Sequence_12">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="732,1740" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="732,1655" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
               <ueab:ExcelProcessScopeX.Body>
                 <ActivityAction x:TypeArguments="ui:IExcelProcess">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="698,1653" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="698,1568" sap2010:WorkflowViewState.IdRef="Sequence_2">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="636,1542" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="C:\Users\hilmi lam\OneDrive - Nanyang Technological University\Documents\UiPath\hack\ClientData.xlsx">
+                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="636,1457" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="C:\Users\hilmi lam\OneDrive - Nanyang Technological University\Documents\UiPath\hack\ClientData.xlsx">
                       <ueab:ExcelApplicationCard.Body>
                         <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel3" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="602,1273" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="602,1148" sap2010:WorkflowViewState.IdRef="Sequence_6">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="False" sap:VirtualizedContainerService.HintSize="540,1162" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" Range="[Excel3.Sheet(&quot;Sheet1&quot;).Range(&quot;B:B&quot;)]" SaveAfterEachRow="True">
+                            <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="False" sap:VirtualizedContainerService.HintSize="540,1037" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" Range="[Excel3.Sheet(&quot;Sheet1&quot;).Range(&quot;B:B&quot;)]" SaveAfterEachRow="True">
                               <ueab:ExcelForEachRowX.Body>
                                 <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
                                   <ActivityAction.Argument1>
@@ -184,7 +184,7 @@
                                   <ActivityAction.Argument2>
                                     <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                                   </ActivityAction.Argument2>
-                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="506,972" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="506,847" sap2010:WorkflowViewState.IdRef="Sequence_7">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -200,12 +200,12 @@
                                         <OutArgument x:TypeArguments="x:String">[MessagetoGPT]</OutArgument>
                                       </Assign.To>
                                       <Assign.Value>
-                                        <InArgument x:TypeArguments="x:String">["Extract Email and Url From the text below And organize it In a table format :" + ClientMessagetoGPT]</InArgument>
+                                        <InArgument x:TypeArguments="x:String">["Extract Email and Url From the text below And organize it In point format :" + ClientMessagetoGPT]</InArgument>
                                       </Assign.Value>
                                     </Assign>
-                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DelayAfter="8" DisplayName="Type Into 'ChatGPT can'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="444,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="3c171951-baf2-4144-96d9-a7a8f369da42" Text="[MessagetoGPT]" Version="V3">
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DelayAfter="8" DisplayName="Type Into 'ChatGPT can'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="444,218" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="3c171951-baf2-4144-96d9-a7a8f369da42" Text="[MessagetoGPT]" Version="V3">
                                       <uix:NTypeInto.Target>
-                                        <uix:TargetAnchorable BrowserURL="https://chat.openai.com/c/84224ce6-2dc3-4732-b2f6-d69ce49dd293" CvTextArea="726, 974, 142, 16" CvTextArgument="Message ChatGPT..." CvType="Text" DesignTimeRectangle="711, 955, 766, 52" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'TEXTAREA prompt-textarea'" FullSelectorArgument="&lt;webctrl id='prompt-textarea' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl id='prompt-textarea' tag='TEXTAREA' type='' class='m-0 w-full resize-none border-0 bg-transparent focus:ring-0 focus-visible:ring-0 dark:bg-transparent py-[10px] pr-10 md:py-3.5 md:pr-12 max-h-[25dvh] max-h-52 placeholder-black/50 dark:placeholder-white/50 pl-3 md:pl-4' aaname='' /&gt;" Guid="83efe93c-9965-43db-b902-ded44993763f" InformativeScreenshot="e76e0926fd4efb37a1ee5638f5dffce9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CDC Vouchers Accepted! ??' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                        <uix:TargetAnchorable BrowserURL="https://chat.openai.com/" CvTextArea="726, 974, 142, 16" CvTextArgument="Message ChatGPT..." CvType="Text" DesignTimeRectangle="711, 955, 766, 52" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'TEXTAREA prompt-textarea'" FullSelectorArgument="&lt;webctrl id='prompt-textarea' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl id='prompt-textarea' tag='TEXTAREA' type='' class='m-0 w-full resize-none border-0 bg-transparent focus:ring-0 focus-visible:ring-0 dark:bg-transparent py-[10px] pr-10 md:py-3.5 md:pr-12 max-h-[25dvh] max-h-52 placeholder-black/50 dark:placeholder-white/50 pl-3 md:pl-4' aaname='' /&gt;" Guid="3550d01e-0e06-4f5d-8f7c-9231d33e959c" InformativeScreenshot="f007a1cdedeef928a7d6907e91b4e89c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ChatGPT' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                                           <uix:TargetAnchorable.Anchors>
                                             <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
                                               <uix:Target CvTextArea="902, 1017, 383, 12" CvTextArgument="ChatGPT can make mistakes. Consider checking important information." CvType="Text" DesignTimeRectangle="904, 1016, 380, 15" ElementType="Text" FriendlyName="'ChatGPT can'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' isleaf='1' parentid='__next' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' parentid='__next' tag='SPAN' class='' aaname='ChatGPT can make mistakes. Consider checking important information.' check:innerText='ChatGPT can make mistakes. Consider checking important information.' /&gt;" SearchSteps="FuzzySelector, CV" />
@@ -214,18 +214,11 @@
                                         </uix:TargetAnchorable>
                                       </uix:NTypeInto.Target>
                                     </uix:NTypeInto>
-                                    <uix:NGetText DisplayName="Get Text 'ChatGPTChatGPTHere are'" sap:VirtualizedContainerService.HintSize="444,157" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="3c171951-baf2-4144-96d9-a7a8f369da42" TextString="[GPTResponse]" Version="V3">
+                                    <uix:NGetText DisplayName="Get Text 'ChatGPTChatGPTHere are'" sap:VirtualizedContainerService.HintSize="444,157" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="3c171951-baf2-4144-96d9-a7a8f369da42" TextString="[GPTResponse]" Version="V3">
                                       <uix:NGetText.Target>
-                                        <uix:TargetAnchorable BrowserURL="https://chat.openai.com/c/84224ce6-2dc3-4732-b2f6-d69ce49dd293" DesignTimeRectangle="268, 598, 1652, 320" DesignTimeScaleFactor="1" FriendlyName="'ChatGPTChatGPTHere are'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='15' parentid='__next' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='px-4 py-2 justify-center text-base md:gap-6 m-auto' parentid='__next' tag='DIV' aaname='' /&gt;" Guid="d7ce8a0e-3fcc-4b5b-a77e-61e20be4ca33" ImageBase64="" InformativeScreenshot="ca6bc1e45e511fc73ff9b18b3bee860a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CDC Vouchers Accepted! ??' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
-                                          <uix:TargetAnchorable.Anchors>
-                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                              <uix:Target CvTextArea="726, 974, 142, 16" CvTextArgument="Message ChatGPT..." CvType="Text" DesignTimeRectangle="711, 955, 766, 52" ElementType="InputBox" FriendlyName="'TEXTAREA prompt-textarea'" FullSelectorArgument="&lt;webctrl id='prompt-textarea' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl id='prompt-textarea' tag='TEXTAREA' type='' class='m-0 w-full resize-none border-0 bg-transparent focus:ring-0 focus-visible:ring-0 dark:bg-transparent py-[10px] pr-10 md:py-3.5 md:pr-12 max-h-[25dvh] max-h-52 placeholder-black/50 dark:placeholder-white/50 pl-3 md:pl-4' aaname='' /&gt;" SearchSteps="FuzzySelector, CV" />
-                                            </scg:List>
-                                          </uix:TargetAnchorable.Anchors>
-                                        </uix:TargetAnchorable>
+                                        <uix:TargetAnchorable BrowserURL="https://chat.openai.com/c/84224ce6-2dc3-4732-b2f6-d69ce49dd293" DesignTimeRectangle="710, 694, 768, 216" DesignTimeScaleFactor="1" FriendlyName="'ChatGPTChatGPTHere are'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='15' parentid='__next' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='flex flex-1 text-base mx-auto gap-3 md:px-5 lg:px-1 xl:px-5 md:max-w-3xl lg:max-w-[40rem] xl:max-w-[48rem] group final-completion' parentid='__next' tag='DIV' aaname='' /&gt;" Guid="2ef4c72a-fa51-490e-a457-dcf668250cfd" InformativeScreenshot="88f9d74ecf3e4cf77caab6bdcd1cf882.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CDC Vouchers Accepted! ??' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
                                       </uix:NGetText.Target>
                                     </uix:NGetText>
-                                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="444,85" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[GPTResponse]" />
                                   </Sequence>
                                 </ActivityAction>
                               </ueab:ExcelForEachRowX.Body>
